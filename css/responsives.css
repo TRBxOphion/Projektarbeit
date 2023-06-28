@@ -33,4 +33,12 @@
     body{
         margin-bottom: 180px;
     }
+        .valorant{
+        width: 150px;
+        margin-left: 20px;
+    }
+    .creeper{
+        width: 163.5px;
+        margin-right: 20px;
+    }
 }
