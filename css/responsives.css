@@ -1,0 +1,36 @@
+/* responsive css */
+@media screen and (max-width: 900px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas:
+       "header header"
+       "nav nav"
+       "content aside"
+       "footer footer"
+    ;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+       "header"
+       "nav"
+       "content"
+       "aside"
+       "footer"
+    ;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    #hobby{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    body{
+        margin-bottom: 180px;
+    }
+}

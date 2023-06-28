@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Formular -- Portfolio -- Simon Amsler</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Formular -- Portfolio -- Simon Amsler">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="css/projektarbeit.css" >
+
+  <link rel="stylesheet" href="css/responsives.css" media="(max-width:900px)">
+  <script src="js/projektarbeit.js">
+  </script>
+</head>
+
+<body>
+<div class="grid-container" id="grid-container">
+  <div class="header"><h1>Formular -- Protfolio -- Simon Amsler</h1></div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="#closebuttonjs" class="closebtn" onclick="closeNav()">X</a>
+    <a href="index.html">Startseite</a>
+    <a href="steckbrief.html">Steckbreif</a>
+    <a href="htmlcss.html">HTML/CSS</a>
+    <a href="hobbys.html">Hobbys</a>
+  </div>
+
+  <div class="nav">
+    <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+  </div>
+  <div class="content">
+
+    <form
+            action="https://formspree.io/f/xknlwbgp"
+            method="POST"
+    >
+      <div>
+        <label>*Anrede :</label><br>
+
+        <label for="frau">Frau</label>
+        <input type="radio" id="frau" name="Anrede" value="Frau" required>
+        <label for="herr">| Herr</label>
+        <input type="radio" id="herr" name="Anrede" value="Herr">
+
+        <label for="anderes">| Anderes</label>
+        <input type="radio" id="anderes" name="Anrede" value="Anderes">
+
+      </div>
+      <div>
+        <label for="vorname">*Vorname: </label><br>
+        <input type="text" id="vorname" name="vorname" minlength="2" maxlength="30" required><br>
+        <label for="nachname">Nachname: </label><br>
+        <input type="text" id="nachname" name="nachname" minlength="2" maxlength="40" required><br>
+        <label for="strasse">*Strasse: </label><br>
+        <input type="text" id="strasse" name="strasse" minlength="2" maxlength="20" required><br>
+        <label for="PLZ/Ort">*PLZ /</label>
+        <label for="Ort">*Ort: </label><br>
+        <input type="number" id="PLZ/Ort" name="plz" min="1000" max="9999" required>
+        <input type="text" id="Ort" name="ort" minlength="5" maxlength="30" required><br>
+        <label for="email">*Email: </label><br>
+        <input type="email" id="email" name="email" minlength="3" maxlength="60" required><br>
+        <label for="nachricht">Nachricht: </label><br>
+        <input type="text" id="nachricht" name="Nachricht" maxlength="100">
+
+      </div>
+
+      <div>
+        <input type="submit" value="Senden">
+        <input type="reset" value="Löschen">
+      </div>
+    </form>
+
+  </div>
+  <div class="aside">
+    <h2>Info</h2>
+    <p>Die Informationen dieses Formulares werden per Email an den Autor gesendet, und werden diskret behandelt</p>
+  </div>
+
+  <div id="footer" class="footer">
+    <ul class="footer">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="mailto:simon.amsler453@gmail.com">Mail</a></li>
+      <li><a href="fromular.html">Formular</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+
+</html>

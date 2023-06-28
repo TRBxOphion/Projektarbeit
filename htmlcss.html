@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>HTML & CSS -- Portfolio -- Simon Amsler</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML & CSS -- Portfolio -- Simon Amsler">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/projektarbeit.css">
+
+    <link rel="stylesheet" href="css/responsives.css" media="(max-width:900px)">
+    <script src="js/projektarbeit.js">
+    </script>
+</head>
+
+<body>
+<div class="grid-container" id="grid-container">
+    <div class="header"><h1>HTML & CSS</h1></div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="#closebuttonjs" class="closebtn" onclick="closeNav()">X</a>
+        <a href="index.html">Startseite</a>
+        <a href="steckbrief.html">Steckbreif</a>
+        <a href="htmlcss.html">HTML & CSS</a>
+        <a href="hobbys.html">Hobbys</a>
+    </div>
+
+    <div class="nav">
+        <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+    </div>
+    <div class="content">
+        <h2>HTML</h2>
+        <p>Hier werde ich auf verschiedene HTML Elemente iengehen, welche ich in den anderen Pages nicht eigebaut
+            habe.</p>
+        <article>
+            <h3>Video Tag</h3>
+            <p>Mit folgendem Statement, könnte mann ein Film oder ein Video in eine Webseite einbetten. Dabei muss
+                beachtet werden, dass YouTube videos am besten mit iFrames eingebettet werden sollten, da es sonst zu
+                komplikationen kommen kann:
+                <br><br>
+
+                &lt;video width="200px" height="150px" controls&gt;<br>
+                &lt;source src="film.mp4" type="video/mp4"&gt;<br>
+                &lt;/video&gt;
+                <br><br>
+                In diesem Beispiel, wird ein Video im Mp4 format eigebettet. Es hat den Namen "Film", und der user kann
+                auf die video kontrollfunktionen zugreiffen. Das video hat eine breite von 200px und eine höhe von
+                150px.
+            </p>
+        </article>
+
+        <h2>CSS</h2>
+        <article>
+            <h3>CSS Variablen</h3>
+            <p>CSS Variabeln können verwendet werden, um Werte zentral zu speichern. Dies hilft dabei, wenn man z.B. die
+                Farben mehrmals ändert. Durch die Variabeln, muss man nicht bei allen Regeln einzeln den Wert ändern,
+                sondern nur bei der definition der Variable.
+                Hier ein beispiel, wie mann eine CSS Variable definiert:
+                <br><br>
+                :root{<br>
+                    --farbe : white;<br>
+                }
+                <br><br>
+                Und hier wie sie angewendet wird:
+
+                <br><br>
+                p{<br>
+                    color: var(--farbe);
+                <br>}
+                <br><br>
+
+                Die Variable wird also mit "var()" eingeleitet, und zwischen die Klammern geschrieben.
+            </p>
+        </article>
+    </div>
+
+    <div class="aside">
+        <p>Wenn man Ideen oder Vorschläge hat für die gesamte webseite, kann man diese gerne mir via Mail oder dem Formular zusenden.</p>
+    </div>
+
+    <div id="footer" class="footer">
+        <ul class="footer">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="mailto:simon.amsler453@gmail.com">Mail</a></li>
+            <li><a href="fromular.html">Formular</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+
+</html>
